@@ -1,33 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
+}
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: var(--font-sans);
   font-size: 12px;
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
 }
 
 a {
-  color: inherit; /* 부모 텍스트 색을 그대로 */
-  text-decoration: none; /* 밑줄 제거(원하면 유지해도 됨) */
+  color: inherit;
+  text-decoration: none;
 }
 a:link,
 a:visited {
-  color: inherit; /* 파란색/보라색 기본색 제거 */
+  color: inherit;
 }
 a:hover {
-  text-decoration: underline; /* 호버 시만 밑줄(선택) */
+  text-decoration: underline;
 }
 
 body {
@@ -40,11 +33,5 @@ body {
   :root {
     color: #213547;
     background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
   }
 }
