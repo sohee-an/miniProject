@@ -8,10 +8,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "@components": ["src/components"],
-      "@pages": ["src/pages"],
-      "@apis": ["src/apis"],
-      "@utiles": ["src/utiles"]
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@apis/*": ["src/apis/*"],
+      "@utils/*": ["src/utils/*"]
     }
   }
 }

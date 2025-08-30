@@ -1,0 +1,33 @@
+{
+  "title": "Simple Form",
+  "sections": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "fields": [
+        {
+          "id": "name",
+          "path": "user.name",
+          "type": "text",
+          "label": "Name",
+          "rules": { "required": true, "minLength": 1 }
+        },
+        {
+          "id": "age",
+          "path": "user.age",
+          "type": "number",
+          "label": "Age",
+          "rules": { "min": 0 }
+        },
+        {
+          "id": "agree",
+          "path": "consent.agree",
+          "type": "checkbox",
+          "label": "I agree",
+          "visibleWhen": { ">=": [{ "var": "user.age" }, 18] },
+          "rules": { "required": true }
+        }
+      ]
+    }
+  ]
+}
